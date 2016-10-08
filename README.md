@@ -6,6 +6,7 @@ version 0.15.1.
 ## Installation
 
 Run `npm install` 
+
 Run `bower install`
 
 ## Build & development
