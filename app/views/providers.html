@@ -1,0 +1,27 @@
+<div class="providers">
+<div ng-if="providerVM.hasError">
+  <div class="alert alert-danger" role="alert">Something went wrong , please check your connection...</div>
+</div>
+<div ng-if="!providerVM.hasError">
+<table class="table table-bordered table-striped"">
+<thead>
+	<tr>
+		<th></th>
+		<th><a ng-click="providerVM.sort('name');">
+            Album Name
+            <span ng-show="providerVM.sortType == 'name' && !providerVM.sortReverse" class="glyphicon glyphicon-triangle-bottom"></span>
+            <span ng-show="providerVM.sortType == 'name' && providerVM.sortReverse" class="glyphicon glyphicon-triangle-top"></span>
+          </a></th>
+		<th>Cover</th>
+	</tr>
+</thead>
+<tbody>
+		 <tr ng-repeat="item in providerVM.albums | orderBy:providerVM.sortType:providerVM.sortReverse" class="form-group">
+			 <td><input type="checkbox" ng-model="vm.albumIds[item.id]" ng-click="providerVM.select(item)" ng-checked="providerVM.isInFavorites(item.id)>-1"/></td>
+			 <td>{{item.name}}</td>
+			 <td><img ng-src="{{item.images[2].url}}"/></td>
+		 </tr>
+</tbody>
+</table>
+</div>
+</div>

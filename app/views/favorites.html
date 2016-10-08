@@ -1,0 +1,23 @@
+<div class="favorites">
+<table class="table table-bordered table-striped">
+<thead>
+	<tr>
+
+		<th><a ng-click="favoriteVM.sort('name');">
+            Name
+            <span ng-show="favoriteVM.sortType == 'name' && !providerVM.sortReverse" class="glyphicon glyphicon-triangle-bottom"></span>
+            <span ng-show="favoriteVM.sortType == 'name' && providerVM.sortReverse" class="glyphicon glyphicon-triangle-top"></span>
+          </a></th>
+		<th>Cover</th>
+    <th>Comments</th>
+	</tr>
+</thead>
+<tbody>
+  	 <tr ng-repeat="favorite in favoriteVM.favorites | orderBy:favoriteVM.sortType:favoriteVM.sortReverse" class="form-group">
+			 <td>{{favorite.name}}</td>
+			 <td><img ng-src="{{favorite.images[2].url}}"/></td>
+       <td><edit-in-place value='favorite.STMSComment'></edit-in-place></td>
+		 </tr>
+</tbody>
+</table>
+</div>
