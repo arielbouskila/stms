@@ -7,10 +7,7 @@ version 0.15.1.
 
 Run `npm install` 
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 81faab1133dc6722355362c6a1015587aac0dc1b
 Run `bower install`
 
 ## Build & development
