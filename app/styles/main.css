@@ -8,11 +8,14 @@
 body {
   padding: 0;
 }
-a[ng-click]{
-    cursor: pointer;
+
+a[ng-click] {
+  cursor: pointer;
 }
 
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .header,
 .marketing,
 .footer {
@@ -20,12 +23,17 @@ a[ng-click]{
   padding-right: 15px;
 }
 
+
 /* Custom page header */
+
 .header {
   border-bottom: 1px solid #e5e5e5;
   margin-bottom: 10px;
 }
+
+
 /* Make the masthead heading the same height as the navigation */
+
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -33,41 +41,50 @@ a[ng-click]{
   padding-bottom: 19px;
 }
 
+
 /* Custom page footer */
+
 .footer {
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
 }
 
-.container-narrow > hr {
+.container-narrow>hr {
   margin: 30px 0;
 }
 
+
 /* Main marketing message and sign up button */
+
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
 }
+
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
+
 /* Supporting marketing content */
+
 .marketing {
   margin: 40px 0;
 }
-.marketing p + h4 {
+
+.marketing p+h4 {
   margin-top: 28px;
 }
 
+
 /* Responsive: Portrait tablets and up */
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
   }
-
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -93,10 +110,11 @@ a[ng-click]{
   display: none;
 }
 
-.edit-in-place.empty span{
-  color:red;
+.edit-in-place.empty span {
+  color: red;
   font-style: italic;
 }
+
 .edit-in-place.active span {
   display: none;
 }
